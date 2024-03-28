@@ -1,0 +1,46 @@
+{
+  "danh-muc": [
+    {
+      "id": "DM01",
+      "ten": "Trà sữa"
+    },
+    {
+      "id": "DM02",
+      "ten": "Trà hoa quả"
+    },
+    {
+      "id": "DM03",
+      "ten": "Cafe"
+    }
+  ],
+  "san-pham": [
+    {
+      "id": "SP001",
+      "ten": "Trà sữa mochi kéo dài",
+      "anh": "img/san-pham-06.jpg",
+      "idDanhMuc": "DM01",
+      "tenDanhMuc": "Trà sữa"
+    },
+    {
+      "id": "SP002",
+      "ten": "Trà đào cam xả",
+      "anh": "img/san-pham-02.jpg",
+      "idDanhMuc": "DM02",
+      "tenDanhMuc": "Trà hoa quả"
+    },
+    {
+      "id": "SP003",
+      "ten": "Cafe muối",
+      "anh": "img/san-pham-03.jpg",
+      "idDanhMuc": "DM03",
+      "tenDanhMuc": "Cafe"
+    },
+    {
+        "id": "SP004",
+        "ten": "Cafe cốt dừa",
+        "anh": "img/san-pham-04.jpg",
+        "idDanhMuc": "DM03",
+        "tenDanhMuc": "Cafe"
+      }
+  ]
+}

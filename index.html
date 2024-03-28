@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Nhúng boostrap -->
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+    <script src="lib/bootstrap.js"></script>
+    <!-- Nhúng icon -->
+    <script src="lib/font-fontawesome-ae333ffef2.js"></script>
+    <!-- Nhúng angular js -->
+    <script src="lib/angular.js"></script>
+    <!-- Nhúng thư viện angular-route. Lưu ý: khai báo angular-route sau angular.js -->
+    <script src="lib/angular-route.js"></script>
+</head>
+<body ng-app="myApp">
+    <!-- Khai báo đường dẫn điều hướng -->
+    <nav class="navbar navbar-expand-sm bg-light shadow">        
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#!list-product" class="nav-link"> Trang danh sách</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!create-product" class="nav-link"> Trang tạo mới</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!detail-product/SP001" class="nav-link"> Trang chi tiết</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"> Trang chỉnh sửa</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+    <!-- End Header -->
+    <!-- Nội dung -->
+    <div class="d-flex container">
+        <div ng-view></div>
+    </div>
+    <!-- End Nội dung -->
+    <!-- Footer -->
+    <!-- End Footer -->
+
+    <!-- Khởi tạo nội dung app -->
+    <script>
+    var spaApp = angular.module('myApp', ['ngRoute']);
+    
+    // Khai báo routeProvider
+    spaApp.config(function ($routeProvider) {
+        $routeProvider
+        .when("/list-product", {
+            templateUrl: "pages/product/list.html",
+            controller: "dsSpCtrl"
+        })
+        .when("/create-product", {
+            templateUrl: "pages/product/create.html",
+            controller: "createSpCtrl"
+        })
+        .when("/detail-product/:id_product", {
+            templateUrl: "pages/product/detail.html",
+            controller: "detailSpCtrl"
+        })
+        .when("/edit-product/:id", {
+            templateUrl: "pages/product/edit.html",
+            controller: "editSpCtrl"
+
+        })
+        .otherwise({
+            redirectTo: '/list-product'
+        })
+
+    });
+    </script>
+
+    <!-- Lưu ý: Nhúng các file js chứa controller sau khi khởi tạo app -->
+    <script src="pages/product/list.js"></script>
+    <script src="pages/product/create.js"></script>
+    <script src="pages/product/edit.js"></script>
+    <script src="pages/product/detail.js"></script>
+
+</body>
+</html>

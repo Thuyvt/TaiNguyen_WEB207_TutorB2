@@ -34,13 +34,6 @@
       "anh": "img/san-pham-03.jpg",
       "idDanhMuc": "DM03",
       "tenDanhMuc": "Cafe"
-    },
-    {
-        "id": "SP004",
-        "ten": "Cafe cốt dừa",
-        "anh": "img/san-pham-04.jpg",
-        "idDanhMuc": "DM03",
-        "tenDanhMuc": "Cafe"
-      }
+    }
   ]
 }

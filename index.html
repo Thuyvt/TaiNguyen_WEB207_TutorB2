@@ -36,7 +36,7 @@
       </nav>
     <!-- End Header -->
     <!-- Nội dung -->
-    <div class="d-flex container">
+    <div class="container">
         <div ng-view></div>
     </div>
     <!-- End Nội dung -->
@@ -65,7 +65,6 @@
         .when("/edit-product/:id", {
             templateUrl: "pages/product/edit.html",
             controller: "editSpCtrl"
-
         })
         .otherwise({
             redirectTo: '/list-product'

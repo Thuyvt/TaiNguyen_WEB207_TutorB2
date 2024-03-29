@@ -1,1 +1,18 @@
-<h3>Sửa sản phẩm</h3>
+<form>
+    <div class="mb-3">
+      <label  class="form-label">Tên</label>
+      <input type="text" class="form-control" ng-model="getObj.ten" >
+    </div>
+
+    <div class="mb-3">
+      <label  class="form-label">Ảnh</label>
+      <input type="text" class="form-control" ng-model="getObj.anh">
+    </div>
+
+    <div class="mb-3">
+        <label  class="form-label">Danh mục</label>
+        <input type="text" class="form-control" ng-model="getObj.tenDanhMuc" >
+      </div>
+  
+    <button ng-click = "updateSp()" class="btn btn-primary">Sửa</button>
+  </form>

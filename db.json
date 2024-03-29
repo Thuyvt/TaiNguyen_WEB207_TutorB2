@@ -15,11 +15,10 @@
   ],
   "san-pham": [
     {
-      "id": "SP001",
-      "ten": "Trà sữa mochi kéo dài",
+      "ten": "Trà sữa mochi 123",
       "anh": "img/san-pham-06.jpg",
-      "idDanhMuc": "DM01",
-      "tenDanhMuc": "Trà sữa"
+      "tenDanhMuc": "Trà sữa 1",
+      "id": "SP001"
     },
     {
       "id": "SP002",
@@ -34,6 +33,18 @@
       "anh": "img/san-pham-03.jpg",
       "idDanhMuc": "DM03",
       "tenDanhMuc": "Cafe"
+    },
+    {
+      "id": "c0be",
+      "ten": "14",
+      "anh": "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/07/hinh-dep.jpg",
+      "tenDanhMuc": "Trà hoa quả"
+    },
+    {
+      "id": "b2bb",
+      "ten": "trà hoa quả",
+      "anh": "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/07/hinh-dep.jpg",
+      "tenDanhMuc": "Trà hoa quả"
     }
   ]
 }
